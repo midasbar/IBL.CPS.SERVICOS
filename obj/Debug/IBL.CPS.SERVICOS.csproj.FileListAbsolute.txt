@@ -1,0 +1,14 @@
+c:\users\andre\documents\visual studio 2013\Projects\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\bin\IBL.CPS.SERVICOS.dll.config
+c:\users\andre\documents\visual studio 2013\Projects\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\bin\IBL.CPS.SERVICOS.dll
+c:\users\andre\documents\visual studio 2013\Projects\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\bin\IBL.CPS.SERVICOS.pdb
+c:\users\andre\documents\visual studio 2013\Projects\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\bin\IBL.CPS.Controlador.dll
+c:\users\andre\documents\visual studio 2013\Projects\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\bin\IBL.CPS.DTO.dll
+c:\users\andre\documents\visual studio 2013\Projects\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\bin\IBL.CPS.Repositorio.dll
+c:\users\andre\documents\visual studio 2013\Projects\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\bin\EntityFramework.dll
+c:\users\andre\documents\visual studio 2013\Projects\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\bin\IBL.CPS.Controlador.pdb
+c:\users\andre\documents\visual studio 2013\Projects\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\bin\IBL.CPS.DTO.pdb
+c:\users\andre\documents\visual studio 2013\Projects\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\bin\IBL.CPS.Repositorio.pdb
+c:\users\andre\documents\visual studio 2013\Projects\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\bin\EntityFramework.xml
+c:\users\andre\documents\visual studio 2013\Projects\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\obj\Debug\IBL.CPS.SERVICOS.csprojResolveAssemblyReference.cache
+c:\users\andre\documents\visual studio 2013\Projects\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\obj\Debug\IBL.CPS.SERVICOS.dll
+c:\users\andre\documents\visual studio 2013\Projects\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\obj\Debug\IBL.CPS.SERVICOS.pdb
