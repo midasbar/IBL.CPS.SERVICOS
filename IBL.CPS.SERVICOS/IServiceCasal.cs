@@ -17,6 +17,7 @@ namespace IBL.CPS.SERVICOS
 
         [OperationContract]
         void Incluir(CasalDTO dto);
+        //comentario para testar o SVN
 
         [OperationContract]
         void Gravar(CasalDTO dto);
