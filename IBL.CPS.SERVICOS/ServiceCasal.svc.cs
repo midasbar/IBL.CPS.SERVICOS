@@ -11,23 +11,23 @@ namespace IBL.CPS.SERVICOS
 {
     public class ServiceCasal : IServiceCasal
     {
-        public List<CasalDTO> ObterLista(String desc)
+        public List<CasalDTO> ObterLista(String desc, String token)
         {
             return ControladorCasal.ObterLista();
         }
-        public void Incluir(CasalDTO dto)
+        public void Incluir(CasalDTO dto, String token)
         {
             ControladorCasal.Incluir(dto);
         }
-        public void Gravar(CasalDTO dto)
+        public void Gravar(CasalDTO dto, String token)
         {
             ControladorCasal.Gravar(dto);
         }
-        public void Excluir(Int32 id)
+        public void Excluir(Int32 id, String token)
         {
             ControladorCasal.Excluir(id);
         }
-        public CasalDTO Obter(Int32 id)
+        public CasalDTO Obter(Int32 id, String token)
         {
             return ControladorCasal.Obter(id);
         }

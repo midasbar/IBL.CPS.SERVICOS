@@ -39,11 +39,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="IBL.CPS.Controlador">
-      <HintPath>..\..\..\..\GitHub\IBL.CPS\IBL.CPS.Controlador\bin\Debug\IBL.CPS.Controlador.dll</HintPath>
+    <Reference Include="IBL.CPS.Controlador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\IBL.CPS\IBL.CPS.Controlador\bin\Debug\IBL.CPS.Controlador.dll</HintPath>
     </Reference>
-    <Reference Include="IBL.CPS.DTO">
-      <HintPath>..\..\..\..\GitHub\IBL.CPS\IBL.CPS.DTO\bin\Debug\IBL.CPS.DTO.dll</HintPath>
+    <Reference Include="IBL.CPS.DTO, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\IBL.CPS\IBL.CPS.Controlador\bin\Debug\IBL.CPS.DTO.dll</HintPath>
+    </Reference>
+    <Reference Include="IBL.CPS.Repositorio">
+      <HintPath>..\..\IBL.CPS\IBL.CPS.Controlador\bin\Debug\IBL.CPS.Repositorio.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
@@ -74,6 +79,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IBL.CPS.Servicos.TokenFaultContract.cs" />
+    <Compile Include="IBL.CPS.Servicos.Utils.cs" />
     <Compile Include="IServiceCasal.cs" />
     <Compile Include="IServiceGrupo.cs" />
     <Compile Include="IServiceParticipante.cs" />
@@ -110,6 +117,12 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IBL.CPS.UTILS\IBL.CPS.UTILS.csproj">
+      <Project>{3fea00f7-2ba7-42ef-bb75-7ab420c9ba5d}</Project>
+      <Name>IBL.CPS.UTILS</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

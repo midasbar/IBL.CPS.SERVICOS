@@ -8,23 +8,34 @@ using System.Text;
 
 namespace IBL.CPS.SERVICOS
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService2" in both code and config file together.
+    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IServiceTipoGrupo" in both code and config file together.
     [ServiceContract]
     public interface IServiceTipoGrupo
     {
+        [TokenInspector]
+        [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        List<TipoGrupoDTO> ObterLista(String desc);
+        List<TipoGrupoDTO> ObterLista(TipoGrupoFTR Filtro, String token);
 
+        [TokenInspector]
+        [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        void Incluir(TipoGrupoDTO dto);
+        void Incluir(TipoGrupoDTO dto, String token);
 
+        [TokenInspector]
+        [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        void Gravar(TipoGrupoDTO dto);
+        void Gravar(TipoGrupoDTO dto, String token);
 
+        [TokenInspector]
+        [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        void Excluir(Int32 id);
+        void Excluir(Int32 id, String token);
 
+        [TokenInspector]
+        [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        TipoGrupoDTO Obter(Int32 id);
+        TipoGrupoDTO Obter(Int32 id, String token);
+
     }
 }

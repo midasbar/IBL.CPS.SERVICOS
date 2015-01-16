@@ -13,23 +13,23 @@ namespace IBL.CPS.SERVICOS
     // NOTE: In order to launch WCF Test Client for testing this service, please select ServicePessoa.svc or ServicePessoa.svc.cs at the Solution Explorer and start debugging.
     public class ServicePessoa : IServicePessoa
     {
-        public List<PessoaDTO> ObterLista(String desc)
+        public List<PessoaDTO> ObterLista(String desc, String token)
         {
             return ControladorPessoa.ObterLista();
         }
-        public void Incluir(PessoaDTO dto)
+        public void Incluir(PessoaDTO dto, String token)
         {
             ControladorPessoa.Incluir(dto);
         }
-        public void Gravar(PessoaDTO dto)
+        public void Gravar(PessoaDTO dto, String token)
         {
             ControladorPessoa.Gravar(dto);
         }
-        public void Excluir(Int32 id)
+        public void Excluir(Int32 id, String token)
         {
             ControladorPessoa.Excluir(id);
         }
-        public PessoaDTO Obter(Int32 id)
+        public PessoaDTO Obter(Int32 id, String token)
         {
             return ControladorPessoa.Obter(id);
         }

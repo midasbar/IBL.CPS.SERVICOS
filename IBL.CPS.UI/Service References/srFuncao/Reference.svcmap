@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="18f7c44f-00c6-461e-9533-bf757742a753" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49399/ServiceFuncao.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceFuncao.disco" MetadataType="Disco" ID="1b57db1f-35eb-4543-a97b-cc9c42dadae3" SourceId="1" SourceUrl="http://localhost:49399/ServiceFuncao.svc?disco" />
+    <MetadataFile FileName="ServiceFuncao.wsdl" MetadataType="Wsdl" ID="cde7d6bd-384d-48b5-a06b-94e514343a1e" SourceId="1" SourceUrl="http://localhost:49399/ServiceFuncao.svc?wsdl" />
+    <MetadataFile FileName="ServiceFuncao1.xsd" MetadataType="Schema" ID="a896a35f-bb70-4e5a-8202-a7b3a18643ad" SourceId="1" SourceUrl="http://localhost:49399/ServiceFuncao.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceFuncao3.xsd" MetadataType="Schema" ID="f101c7ec-2c63-41bb-88c4-5a5eb3978b18" SourceId="1" SourceUrl="http://localhost:49399/ServiceFuncao.svc?xsd=xsd3" />
+    <MetadataFile FileName="ServiceFuncao2.xsd" MetadataType="Schema" ID="4241edca-b90b-4c2c-820c-ab2bc684935a" SourceId="1" SourceUrl="http://localhost:49399/ServiceFuncao.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceFuncao.xsd" MetadataType="Schema" ID="4417cd4e-5d65-46e5-bd91-fb3ecafe36cf" SourceId="1" SourceUrl="http://localhost:49399/ServiceFuncao.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

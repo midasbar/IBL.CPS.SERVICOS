@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceFuncao" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:49399/ServiceFuncao.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:49399/ServiceFuncao.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/IBL.CPS.SERVICOS" />
+      <xsd:import schemaLocation="http://localhost:49399/ServiceFuncao.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:49399/ServiceFuncao.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/IBL.CPS.DTO" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceFuncao_ObterLista_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObterLista" />
+  </wsdl:message>
+  <wsdl:message name="IServiceFuncao_ObterLista_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObterListaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceFuncao_ObterLista_TokenFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/IBL.CPS.SERVICOS" name="detail" element="q1:TokenFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="IServiceFuncao_Incluir_InputMessage">
+    <wsdl:part name="parameters" element="tns:Incluir" />
+  </wsdl:message>
+  <wsdl:message name="IServiceFuncao_Incluir_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IncluirResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceFuncao_Incluir_TokenFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/IBL.CPS.SERVICOS" name="detail" element="q2:TokenFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="IServiceFuncao_Gravar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Gravar" />
+  </wsdl:message>
+  <wsdl:message name="IServiceFuncao_Gravar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GravarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceFuncao_Gravar_TokenFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/IBL.CPS.SERVICOS" name="detail" element="q3:TokenFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="IServiceFuncao_Excluir_InputMessage">
+    <wsdl:part name="parameters" element="tns:Excluir" />
+  </wsdl:message>
+  <wsdl:message name="IServiceFuncao_Excluir_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExcluirResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceFuncao_Excluir_TokenFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/IBL.CPS.SERVICOS" name="detail" element="q4:TokenFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="IServiceFuncao_Obter_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obter" />
+  </wsdl:message>
+  <wsdl:message name="IServiceFuncao_Obter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceFuncao_Obter_TokenFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/IBL.CPS.SERVICOS" name="detail" element="q5:TokenFaultContract" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceFuncao">
+    <wsdl:operation name="ObterLista">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceFuncao/ObterLista" message="tns:IServiceFuncao_ObterLista_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceFuncao/ObterListaResponse" message="tns:IServiceFuncao_ObterLista_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceFuncao/ObterListaTokenFaultContractFault" name="TokenFaultContractFault" message="tns:IServiceFuncao_ObterLista_TokenFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Incluir">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceFuncao/Incluir" message="tns:IServiceFuncao_Incluir_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceFuncao/IncluirResponse" message="tns:IServiceFuncao_Incluir_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceFuncao/IncluirTokenFaultContractFault" name="TokenFaultContractFault" message="tns:IServiceFuncao_Incluir_TokenFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Gravar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceFuncao/Gravar" message="tns:IServiceFuncao_Gravar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceFuncao/GravarResponse" message="tns:IServiceFuncao_Gravar_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceFuncao/GravarTokenFaultContractFault" name="TokenFaultContractFault" message="tns:IServiceFuncao_Gravar_TokenFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Excluir">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceFuncao/Excluir" message="tns:IServiceFuncao_Excluir_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceFuncao/ExcluirResponse" message="tns:IServiceFuncao_Excluir_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceFuncao/ExcluirTokenFaultContractFault" name="TokenFaultContractFault" message="tns:IServiceFuncao_Excluir_TokenFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceFuncao/Obter" message="tns:IServiceFuncao_Obter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceFuncao/ObterResponse" message="tns:IServiceFuncao_Obter_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceFuncao/ObterTokenFaultContractFault" name="TokenFaultContractFault" message="tns:IServiceFuncao_Obter_TokenFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceFuncao" type="tns:IServiceFuncao">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ObterLista">
+      <soap:operation soapAction="http://tempuri.org/IServiceFuncao/ObterLista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="TokenFaultContractFault">
+        <soap:fault use="literal" name="TokenFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Incluir">
+      <soap:operation soapAction="http://tempuri.org/IServiceFuncao/Incluir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="TokenFaultContractFault">
+        <soap:fault use="literal" name="TokenFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Gravar">
+      <soap:operation soapAction="http://tempuri.org/IServiceFuncao/Gravar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="TokenFaultContractFault">
+        <soap:fault use="literal" name="TokenFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Excluir">
+      <soap:operation soapAction="http://tempuri.org/IServiceFuncao/Excluir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="TokenFaultContractFault">
+        <soap:fault use="literal" name="TokenFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Obter">
+      <soap:operation soapAction="http://tempuri.org/IServiceFuncao/Obter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="TokenFaultContractFault">
+        <soap:fault use="literal" name="TokenFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceFuncao">
+    <wsdl:port name="BasicHttpBinding_IServiceFuncao" binding="tns:BasicHttpBinding_IServiceFuncao">
+      <soap:address location="http://localhost:49399/ServiceFuncao.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

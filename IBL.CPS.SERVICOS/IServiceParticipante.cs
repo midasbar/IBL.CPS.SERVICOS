@@ -12,19 +12,29 @@ namespace IBL.CPS.SERVICOS
     [ServiceContract]
     public interface IServiceParticipante
     {
+        [TokenInspector]
+        [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        List<ParticipanteDTO> ObterLista(String desc);
+        List<ParticipanteDTO> ObterLista(String desc, String token);
 
+        [TokenInspector]
+        [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        void Incluir(ParticipanteDTO dto);
+        void Incluir(ParticipanteDTO dto, String token);
 
+        [TokenInspector]
+        [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        void Gravar(ParticipanteDTO dto);
+        void Gravar(ParticipanteDTO dto, String token);
 
+        [TokenInspector]
+        [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        void Excluir(Int32 id);
+        void Excluir(Int32 id, String token);
 
+        [TokenInspector]
+        [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        ParticipanteDTO Obter(Int32 id);
+        ParticipanteDTO Obter(Int32 id, String token);
     }
 }

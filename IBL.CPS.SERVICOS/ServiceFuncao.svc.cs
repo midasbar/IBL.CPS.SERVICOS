@@ -12,23 +12,23 @@ namespace IBL.CPS.SERVICOS
 {
     public class ServiceFuncao : IServiceFuncao
     {
-        public List<FuncaoDTO> ObterLista(String desc)
+        public List<FuncaoDTO> ObterLista(FuncaoFTR Filtro, String token)
         {
-            return ControladorFuncao.ObterLista(desc);
+            return ControladorFuncao.ObterLista(Filtro);
         }
-        public void Incluir(FuncaoDTO dto)
+        public void Incluir(FuncaoDTO dto, String token)
         {
             ControladorFuncao.Incluir(dto);
         }
-        public void Gravar(FuncaoDTO dto)
+        public void Gravar(FuncaoDTO dto, String token)
         {
             ControladorFuncao.Gravar(dto);
         }
-        public void Excluir(Int32 id)
+        public void Excluir(Int32 id, String token)
         {
             ControladorFuncao.Excluir(id);
         }
-        public FuncaoDTO Obter(Int32 id)
+        public FuncaoDTO Obter(Int32 id, String token)
         {
             return ControladorFuncao.Obter(id);
         }

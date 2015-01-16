@@ -13,23 +13,23 @@ namespace IBL.CPS.SERVICOS
     // NOTE: In order to launch WCF Test Client for testing this service, please select ServiceParticipante.svc or ServiceParticipante.svc.cs at the Solution Explorer and start debugging.
     public class ServiceParticipante : IServiceParticipante
     {
-        public List<ParticipanteDTO> ObterLista(String desc)
+        public List<ParticipanteDTO> ObterLista(String desc, String token)
         {
             return ControladorParticipante.ObterLista();
         }
-        public void Incluir(ParticipanteDTO dto)
+        public void Incluir(ParticipanteDTO dto, String token)
         {
             ControladorParticipante.Incluir(dto);
         }
-        public void Gravar(ParticipanteDTO dto)
+        public void Gravar(ParticipanteDTO dto, String token)
         {
             ControladorParticipante.Gravar(dto);
         }
-        public void Excluir(Int32 id)
+        public void Excluir(Int32 id, String token)
         {
             ControladorParticipante.Excluir(id);
         }
-        public ParticipanteDTO Obter(Int32 id)
+        public ParticipanteDTO Obter(Int32 id, String token)
         {
             return ControladorParticipante.Obter(id);
         }

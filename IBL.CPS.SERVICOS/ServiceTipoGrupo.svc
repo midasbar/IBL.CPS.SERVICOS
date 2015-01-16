@@ -1,1 +1,1 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="IBL.CPS.SERVICOS.Service2" CodeBehind="ServiceTipoGrupo.svc.cs" %>
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="IBL.CPS.SERVICOS.ServiceTipoGrupo" CodeBehind="ServiceTipoGrupo.svc.cs" %>

@@ -1,0 +1,4 @@
+C:\Users\Andre\Documents\GitHub\IBL.CPS.SERVICOS\IBL.CPS.UTILS\bin\Debug\IBL.CPS.UTILS.dll
+C:\Users\Andre\Documents\GitHub\IBL.CPS.SERVICOS\IBL.CPS.UTILS\bin\Debug\IBL.CPS.UTILS.pdb
+C:\Users\Andre\Documents\GitHub\IBL.CPS.SERVICOS\IBL.CPS.UTILS\obj\Debug\IBL.CPS.UTILS.dll
+C:\Users\Andre\Documents\GitHub\IBL.CPS.SERVICOS\IBL.CPS.UTILS\obj\Debug\IBL.CPS.UTILS.pdb

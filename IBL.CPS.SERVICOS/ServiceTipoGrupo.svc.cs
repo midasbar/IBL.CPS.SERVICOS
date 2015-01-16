@@ -9,30 +9,30 @@ using System.Text;
 
 namespace IBL.CPS.SERVICOS
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service2" in code, svc and config file together.
-    // NOTE: In order to launch WCF Test Client for testing this service, please select Service2.svc or Service2.svc.cs at the Solution Explorer and start debugging.
+    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "ServiceTipoGrupo" in code, svc and config file together.
+    // NOTE: In order to launch WCF Test Client for testing this service, please select ServiceTipoGrupo.svc or ServiceTipoGrupo.svc.cs at the Solution Explorer and start debugging.
     public class ServiceTipoGrupo : IServiceTipoGrupo
     {
-        public List<TipoGrupoDTO> ObterLista(String desc)
+        public List<TipoGrupoDTO> ObterLista(TipoGrupoFTR Filtro, String token)
         {
-           return ControladorTipoGrupo.ObterLista(desc);
+            return ControladorTipoGrupo.ObterLista(Filtro);
         }
 
-        public void Incluir(TipoGrupoDTO dto)
+        public void Incluir(TipoGrupoDTO dto, String token)
         {
             ControladorTipoGrupo.Incluir(dto);
         }
 
-        public void Gravar(TipoGrupoDTO dto)
+        public void Gravar(TipoGrupoDTO dto, String token)
         {
             ControladorTipoGrupo.Gravar(dto);
         }
 
-        public void Excluir(Int32 id)
+        public void Excluir(Int32 id, String token)
         {
             ControladorTipoGrupo.Excluir(id);
         }
-        public TipoGrupoDTO Obter(Int32 id)
+        public TipoGrupoDTO Obter(Int32 id, String token)
         {
             return ControladorTipoGrupo.Obter(id);
         }

@@ -12,20 +12,30 @@ namespace IBL.CPS.SERVICOS
     [ServiceContract]
     public interface IServiceCasal
     {
+        [TokenInspector]
+        [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        List<CasalDTO> ObterLista(String desc);
+        List<CasalDTO> ObterLista(String desc, String token);
 
+        [TokenInspector]
+        [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        void Incluir(CasalDTO dto);
+        void Incluir(CasalDTO dto, String token);
         //comentario para testar o SVN
 
+        [TokenInspector]
+        [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        void Gravar(CasalDTO dto);
+        void Gravar(CasalDTO dto, String token);
 
+        [TokenInspector]
+        [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        void Excluir(Int32 id);
+        void Excluir(Int32 id, String token);
 
+        [TokenInspector]
+        [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        CasalDTO Obter(Int32 id);
+        CasalDTO Obter(Int32 id, String token);
     }
 }

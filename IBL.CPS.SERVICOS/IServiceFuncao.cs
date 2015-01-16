@@ -13,20 +13,30 @@ namespace IBL.CPS.SERVICOS
     [ServiceContract]
     public interface IServiceFuncao
     {
+        [TokenInspector]
+        [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        List<FuncaoDTO> ObterLista(String desc);
+        List<FuncaoDTO> ObterLista(FuncaoFTR Filtro , String token );
+        
+        [TokenInspector]
+        [FaultContract(typeof(TokenFaultContract))]
+        [OperationContract]
+        void Incluir(FuncaoDTO dto, String token);
 
+        [TokenInspector]
+        [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        void Incluir(FuncaoDTO dto);
+        void Gravar(FuncaoDTO dto, String token);
 
+        [TokenInspector]
+        [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        void Gravar(FuncaoDTO dto);
+        void Excluir(Int32 id, String token);
 
+        [TokenInspector]
+        [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        void Excluir(Int32 id);
-
-        [OperationContract]
-        FuncaoDTO Obter(Int32 id);
+        FuncaoDTO Obter(Int32 id, String token);
     }
 
 }

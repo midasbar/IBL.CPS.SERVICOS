@@ -12,19 +12,29 @@ namespace IBL.CPS.SERVICOS
     [ServiceContract]
     public interface IServiceGrupo
     {
+        [TokenInspector]
+        [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        List<GrupoDTO> ObterLista(String desc);
+        List<GrupoDTO> ObterLista(String desc, String token);
 
+        [TokenInspector]
+        [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        void Incluir(GrupoDTO dto);
+        void Incluir(GrupoDTO dto, String token);
 
+        [TokenInspector]
+        [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        void Gravar(GrupoDTO dto);
+        void Gravar(GrupoDTO dto, String token);
 
+        [TokenInspector]
+        [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        void Excluir(Int32 id);
+        void Excluir(Int32 id, String token);
 
+        [TokenInspector]
+        [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        GrupoDTO Obter(Int32 id);
+        GrupoDTO Obter(Int32 id, String token);
     }
 }

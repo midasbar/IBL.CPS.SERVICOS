@@ -12,3 +12,19 @@ c:\users\andre\documents\visual studio 2013\Projects\IBL.CPS.SERVICOS\IBL.CPS.SE
 c:\users\andre\documents\visual studio 2013\Projects\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\obj\Debug\IBL.CPS.SERVICOS.csprojResolveAssemblyReference.cache
 c:\users\andre\documents\visual studio 2013\Projects\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\obj\Debug\IBL.CPS.SERVICOS.dll
 c:\users\andre\documents\visual studio 2013\Projects\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\obj\Debug\IBL.CPS.SERVICOS.pdb
+C:\Users\Andre\Documents\GitHub\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\bin\IBL.CPS.SERVICOS.dll.config
+C:\Users\Andre\Documents\GitHub\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\bin\IBL.CPS.SERVICOS.dll
+C:\Users\Andre\Documents\GitHub\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\bin\IBL.CPS.SERVICOS.pdb
+C:\Users\Andre\Documents\GitHub\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\bin\IBL.CPS.Controlador.dll
+C:\Users\Andre\Documents\GitHub\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\bin\IBL.CPS.DTO.dll
+C:\Users\Andre\Documents\GitHub\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\bin\IBL.CPS.Repositorio.dll
+C:\Users\Andre\Documents\GitHub\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\bin\IBL.CPS.UTILS.dll
+C:\Users\Andre\Documents\GitHub\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\bin\EntityFramework.dll
+C:\Users\Andre\Documents\GitHub\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\bin\IBL.CPS.UTILS.pdb
+C:\Users\Andre\Documents\GitHub\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\bin\IBL.CPS.Controlador.pdb
+C:\Users\Andre\Documents\GitHub\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\bin\IBL.CPS.DTO.pdb
+C:\Users\Andre\Documents\GitHub\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\bin\IBL.CPS.Repositorio.pdb
+C:\Users\Andre\Documents\GitHub\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\bin\EntityFramework.xml
+C:\Users\Andre\Documents\GitHub\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\obj\Debug\IBL.CPS.SERVICOS.csprojResolveAssemblyReference.cache
+C:\Users\Andre\Documents\GitHub\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\obj\Debug\IBL.CPS.SERVICOS.dll
+C:\Users\Andre\Documents\GitHub\IBL.CPS.SERVICOS\IBL.CPS.SERVICOS\obj\Debug\IBL.CPS.SERVICOS.pdb
