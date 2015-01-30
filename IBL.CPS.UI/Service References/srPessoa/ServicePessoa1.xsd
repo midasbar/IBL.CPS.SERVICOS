@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/IBL.CPS.DTO" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/IBL.CPS.DTO" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="PessoaFTR">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descricao" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PessoaFTR" nillable="true" type="tns:PessoaFTR" />
+  <xs:complexType name="ArrayOfPessoaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PessoaDTO" nillable="true" type="tns:PessoaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPessoaDTO" nillable="true" type="tns:ArrayOfPessoaDTO" />
+  <xs:complexType name="PessoaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CELULAR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CPF" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DATANASC" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="E_MAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="NOME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NUMERO_DE_MEMBRO" type="xs:int" />
+      <xs:element minOccurs="0" name="RG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SEXO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TELEFONE_FIXO" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PessoaDTO" nillable="true" type="tns:PessoaDTO" />
+</xs:schema>

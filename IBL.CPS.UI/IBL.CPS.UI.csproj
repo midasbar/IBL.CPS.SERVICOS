@@ -185,18 +185,33 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\CasalController.cs" />
     <Compile Include="Controllers\FuncaoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Lookups.cs" />
     <Compile Include="Controllers\TipoGrupoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\BaseContext.cs" />
+    <Compile Include="Models\PessoaModels.cs" />
+    <Compile Include="Models\EnderecoModels.cs" />
+    <Compile Include="Models\CasalModels.cs" />
     <Compile Include="Models\FuncaoModels.cs" />
     <Compile Include="Models\TipoGrupoModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\srCasal\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\srFuncao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\srPessoa\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -279,9 +294,24 @@
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Service References\srCasal\IBL.CPS.UI.srCasal.CasalDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\srCasal\ServiceCasal.disco" />
+    <None Include="Service References\srCasal\configuration91.svcinfo" />
+    <None Include="Service References\srCasal\configuration.svcinfo" />
+    <None Include="Service References\srCasal\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Service References\srFuncao\IBL.CPS.UI.srFuncao.FuncaoDTO.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <None Include="Service References\srCasal\ServiceCasal.wsdl" />
+    <None Include="Service References\srCasal\ServiceCasal.xsd" />
+    <None Include="Service References\srCasal\ServiceCasal1.xsd" />
+    <None Include="Service References\srCasal\ServiceCasal2.xsd" />
+    <None Include="Service References\srCasal\ServiceCasal3.xsd" />
     <None Include="Service References\srFuncao\ServiceFuncao.disco" />
     <None Include="Service References\srFuncao\configuration91.svcinfo" />
     <None Include="Service References\srFuncao\configuration.svcinfo" />
@@ -289,10 +319,25 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Service References\srPessoa\IBL.CPS.UI.srPessoa.PessoaDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\srPessoa\ServicePessoa.disco" />
+    <None Include="Service References\srPessoa\configuration91.svcinfo" />
+    <None Include="Service References\srPessoa\configuration.svcinfo" />
+    <None Include="Service References\srPessoa\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Service References\srTipoGrupo\IBL.CPS.UI.srTipoGrupo.TipoGrupoDTO.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Service References\srFuncao\ServiceFuncao3.xsd" />
+    <None Include="Service References\srPessoa\ServicePessoa.wsdl" />
+    <None Include="Service References\srPessoa\ServicePessoa.xsd" />
+    <None Include="Service References\srPessoa\ServicePessoa1.xsd" />
+    <None Include="Service References\srPessoa\ServicePessoa2.xsd" />
+    <None Include="Service References\srPessoa\ServicePessoa3.xsd" />
     <None Include="Service References\srTipoGrupo\ServiceTipoGrupo.disco" />
     <None Include="Service References\srTipoGrupo\configuration91.svcinfo" />
     <None Include="Service References\srTipoGrupo\configuration.svcinfo" />
@@ -302,13 +347,15 @@
     </None>
     <Content Include="Views\Account\ChangePassword.aspx" />
     <Content Include="Views\Account\ChangePasswordSuccess.aspx" />
-    <Content Include="Views\Account\LogOn.aspx" />
+    <Content Include="Views\Account\LogIn.aspx" />
     <Content Include="Views\Account\RegisterSuccess.aspx" />
     <Content Include="Views\Funcao\Create.aspx" />
     <Content Include="Views\Funcao\Delete.aspx" />
     <Content Include="Views\Funcao\Details.aspx" />
     <Content Include="Views\Funcao\Edit.aspx" />
     <Content Include="Views\Funcao\Index.aspx" />
+    <Content Include="Views\Shared\Endereco.ascx" />
+    <Content Include="Views\Shared\DadosPessoa.ascx" />
     <Content Include="Views\TipoGrupo\Create.aspx" />
     <Content Include="Views\TipoGrupo\Delete.aspx" />
     <Content Include="Views\TipoGrupo\Details.aspx" />
@@ -336,15 +383,7 @@
     <Content Include="Images\orderedList7.png" />
     <Content Include="Images\orderedList8.png" />
     <Content Include="Images\orderedList9.png" />
-    <Content Include="Views\Account\_ChangePasswordPartial.aspx" />
-    <Content Include="Views\Account\_ExternalLoginsListPartial.aspx" />
-    <Content Include="Views\Account\_RemoveExternalLoginsPartial.aspx" />
-    <Content Include="Views\Account\_SetPasswordPartial.aspx" />
-    <Content Include="Views\Account\Login.aspx" />
-    <Content Include="Views\Account\Manage.aspx" />
     <Content Include="Views\Account\Register.aspx" />
-    <Content Include="Views\Account\ExternalLoginFailure.aspx" />
-    <Content Include="Views\Account\ExternalLoginConfirmation.aspx" />
     <Content Include="Views\Home\About.aspx" />
     <Content Include="Views\Home\Contact.aspx" />
     <Content Include="Views\Home\Index.aspx" />
@@ -373,7 +412,9 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Service References\srCasal\" />
     <WCFMetadataStorage Include="Service References\srFuncao\" />
+    <WCFMetadataStorage Include="Service References\srPessoa\" />
     <WCFMetadataStorage Include="Service References\srTipoGrupo\" />
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4501af06-b9eb-4d75-8c97-b864245a7217" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49399/ServiceCasal.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceCasal.wsdl" MetadataType="Wsdl" ID="3d8e80f3-312c-4b3d-9166-1fe94b4a2e66" SourceId="1" SourceUrl="http://localhost:49399/ServiceCasal.svc?wsdl" />
+    <MetadataFile FileName="ServiceCasal.xsd" MetadataType="Schema" ID="b2262b72-692b-4ab0-842a-594261db127d" SourceId="1" SourceUrl="http://localhost:49399/ServiceCasal.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceCasal1.xsd" MetadataType="Schema" ID="1595815f-814a-487c-a586-aa94f05e1051" SourceId="1" SourceUrl="http://localhost:49399/ServiceCasal.svc?xsd=xsd3" />
+    <MetadataFile FileName="ServiceCasal.disco" MetadataType="Disco" ID="c0f6a3fe-2ef4-4d24-a699-f727c4432752" SourceId="1" SourceUrl="http://localhost:49399/ServiceCasal.svc?disco" />
+    <MetadataFile FileName="ServiceCasal2.xsd" MetadataType="Schema" ID="efc73960-cb23-42f8-8a23-fda889cbace8" SourceId="1" SourceUrl="http://localhost:49399/ServiceCasal.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceCasal3.xsd" MetadataType="Schema" ID="edc383a8-fd39-4ba3-8f27-a4bc699470ab" SourceId="1" SourceUrl="http://localhost:49399/ServiceCasal.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

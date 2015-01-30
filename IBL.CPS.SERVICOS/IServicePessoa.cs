@@ -15,7 +15,7 @@ namespace IBL.CPS.SERVICOS
         [TokenInspector]
         [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        List<PessoaDTO> ObterLista(String desc, String token);
+        List<PessoaDTO> ObterLista(PessoaFTR Filtro, String token);
 
         [TokenInspector]
         [FaultContract(typeof(TokenFaultContract))]

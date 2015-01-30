@@ -15,13 +15,12 @@ namespace IBL.CPS.SERVICOS
         [TokenInspector]
         [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
-        List<CasalDTO> ObterLista(String desc, String token);
+        List<CasalDTO> ObterLista(CasalFTR Filtro, String token);
 
         [TokenInspector]
         [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
         void Incluir(CasalDTO dto, String token);
-        //comentario para testar o SVN
 
         [TokenInspector]
         [FaultContract(typeof(TokenFaultContract))]
@@ -37,5 +36,6 @@ namespace IBL.CPS.SERVICOS
         [FaultContract(typeof(TokenFaultContract))]
         [OperationContract]
         CasalDTO Obter(Int32 id, String token);
+ 
     }
 }

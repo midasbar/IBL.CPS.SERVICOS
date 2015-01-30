@@ -11,9 +11,9 @@ namespace IBL.CPS.SERVICOS
 {
     public class ServiceCasal : IServiceCasal
     {
-        public List<CasalDTO> ObterLista(String desc, String token)
+        public List<CasalDTO> ObterLista(CasalFTR Filtro, String token)
         {
-            return ControladorCasal.ObterLista();
+            return ControladorCasal.ObterLista(Filtro);
         }
         public void Incluir(CasalDTO dto, String token)
         {

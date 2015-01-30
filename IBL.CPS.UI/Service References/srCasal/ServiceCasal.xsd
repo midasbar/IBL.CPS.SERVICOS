@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/IBL.CPS.DTO" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/IBL.CPS.DTO" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="CasalFTR">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descricao" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CasalFTR" nillable="true" type="tns:CasalFTR" />
+  <xs:complexType name="ArrayOfCasalDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CasalDTO" nillable="true" type="tns:CasalDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCasalDTO" nillable="true" type="tns:ArrayOfCasalDTO" />
+  <xs:complexType name="CasalDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BAIRRO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CEP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CIDADE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COMPLEMENTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ENDERECO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FUNCAO_ATUAL" type="xs:int" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="IDESPOSA" type="xs:int" />
+      <xs:element minOccurs="0" name="IDMARIDO" type="xs:int" />
+      <xs:element minOccurs="0" name="NOMEESPOSA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NOMEMARIDO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NUMERO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UF" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CasalDTO" nillable="true" type="tns:CasalDTO" />
+</xs:schema>
